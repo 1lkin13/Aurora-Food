@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- nav font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- nav font  -->
+    <link rel="stylesheet" href="products.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-flex1">
+            <ul>
+                <a href="Home.html">
+                    <li>Home</li>
+                </a>
+                <a href="About.html">
+                    <li>About</li>
+                </a>
+                <a href="Contact.html">
+                    <li>Contact</li>
+                </a>
+
+            </ul>
+        </div>
+        <div class="nav-flex2">
+            <h1>Aurora</h1>
+        </div>
+        <div class="nav-flex3">
+            <ul>
+                <a href="readmore.html">
+                    <li>ReadMore</li>
+                </a>
+                <a href="products.html">
+                    <li>Products</li>
+                </a>
+
+            </ul>
+            <div class="nav-flex3A">
+                <a href="login.html" id="signin"><button>Sign In</button></a>
+                <i class="fa-regular fa-user"></i>
+                <a href="#search" id="searcha"> <i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <section class="main" id="search">
+
+        <form class="search-container">
+            <input type="text" id="search-bar" placeholder="What can I help you with today?">
+
+
+
+        </form>
+
+        <div class="factList">
+            <div class="filter">
+
+                <div class="cat1" onclick="showProducts('all')">
+                    <div class="caticon">
+                        <h2>All Foods</h2>
+                    </div>
+
+                </div>
+
+                <div class="cat1" onclick="toggleList(this)">
+                    <div class="caticon">
+                        <h2>Fast Food</h2>
+                    </div>
+
+                    <ul class="list">
+                        <li onclick="showProducts('pizza')"> Pizza</li>
+                        <li onclick="showProducts('hamburger')"> Hamburger</li>
+                        <li onclick="showProducts('taco')"> Taco</li>
+                        <li onclick="showProducts('hotdog')"> Hot Dog</li>
+                        <li onclick="showProducts('nuggets')"> Nuggets</li>
+
+
+
+
+
+                    </ul>
+                </div>
+
+
+                <div class="cat1" onclick="toggleList(this)">
+                    <div class="caticon">
+                        <h2>Salad</h2>
+                    </div>
+
+                    <ul class="list">
+                        <li onclick="showProducts('ceaser')">Caesar</li>
+                        <li onclick="showProducts('cobb')">Cobb</li>
+                        <li onclick="showProducts('waldorf')">Waldorf</li>
+                        <li onclick="showProducts('quinoa')">Quinoa</li>
+                        <li onclick="showProducts('tuna')">Tuna</li>
+
+
+
+
+
+                    </ul>
+                </div>
+
+
+
+
+                <div class="cat1" onclick="toggleList(this)">
+                    <div class="caticon">
+                        <h2>Cakes</h2>
+                    </div>
+                    <ul class="list">
+                        <li onclick="showProducts('cake')"> Cake</li>
+                        <li onclick="showProducts('cheesecake')"> Cheesecake</li>
+                        <li onclick="showProducts('brownie')"> Brownie</li>
+                        <li onclick="showProducts('tiramisu')"> Tiramisu</li>
+                        <li onclick="showProducts('cookie')"> Cookie</li>
+
+
+
+                    </ul>
+                </div>
+                <div class="cat1" onclick="toggleList(this)">
+                    <div class="caticon">
+                        <h2>Snacks</h2>
+                    </div>
+                    <ul class="list">
+                        <li onclick="showProducts('chips')"> Chips</li>
+                        <li onclick="showProducts('popcorn')"> Popcorn</li>
+                        <li onclick="showProducts('nuts')"> Nuts</li>
+                        <li onclick="showProducts('fruitbowl')">Fruit Bowl</li>
+                        <li onclick="showProducts('veggiesticks')">Veggie Sticks</li>
+                    </ul>
+                </div>
+                <div class="cat1" onclick="toggleList(this)">
+                    <div class="caticon">
+                        <h2>Meat</h2>
+                    </div>
+                    <ul class="list">
+                        <li onclick="showProducts('dolma')">Dolma</li>
+                        <li onclick="showProducts('fish')">Fish</li>
+                        <li onclick="showProducts('barbecue')">Barbecue</li>
+                        <li onclick="showProducts('steak')">Steak</li>
+                        <li onclick="showProducts('lahmacun')">Lahmacun</li>
+                    </ul>
+                </div>
+                <div class="cat1" onclick="toggleList(this)">
+                    <div class="caticon">
+                        <h2>Wine</h2>
+                    </div>
+                    <ul class="list">
+                        <li onclick="showProducts('icedcoffe')">Iced Coffe</li>
+                        <li onclick="showProducts('smoothies')">Smoothies</li>
+                        <li onclick="showProducts('freshjuices')">Fresh Juices</li>
+                        <li onclick="showProducts('flavoredwater')">Flavored Water</li>
+                        <li onclick="showProducts('milkshakes')">Milkshakes</li>
+
+
+
+                    </ul>
+                </div>
+                <div class="cat1" onclick="toggleList(this)">
+                    <div class="caticon">
+                        <h2>Alcoholic</h2>
+                    </div>
+                    <ul class="list">
+                        <li onclick="showProducts('beer')"> Beer</li>
+                        <li onclick="showProducts('wine')">Wine</li>
+                        <li onclick="showProducts('vodka')">Vodka</li>
+                        <li onclick="showProducts('whisky')">Whisky</li>
+                        <li onclick="showProducts('tequila')">Tequila</li>
+
+
+
+
+                    </ul>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+        <div class="foods">
+        <div data-category="hamburger" class="Product-item">
+                <div class="Product-item-img"><img src="./Images/image 26.png" alt=""></div>
+
+                <h4 class="product4">The Best Easy One Pot Chicken and Rice</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>30 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Healthy</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>6/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="pizza" class="Product-item">
+                <div class="Product-item-img"><img src="./Images/image 26-1.png" alt=""></div>
+
+                <h4 class="product4">Strawberry Oatmeal Pancake with Honey Syrup</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>30 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Breakfast</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>5/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="cake" class="Product-item">
+                <div class="Product-item-img"><img src="./Images/image 26-2.png" alt=""></div>
+
+                <h4 class="product4">Chicken Meatballs with Cream Cheese</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>30 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Meat</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>7/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-nan="cheesecakeProducts" class="Product-item">
+                <div class="Product-item-img"><img src="./Images/image 26-3.png" alt=""></div>
+
+                <h4 class="product4">Fruity Pancake with Orange & Blueberry</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>30 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Sweet</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>2/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="vodka" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927225832_[fpdl.in]_russian-vodka-background_8353-1240_normal.jpg" alt="">
+                </div>
+
+                <h4 class="product4">Aurora Borealis Vodka</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>5 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Alcoholic</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>3/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="wine" class="Product-item">
+                <div class="Product-item-img"><img src="./Images/wine1.jpg" alt=""></div>
+
+                <h4 class="product4">Midnight Bliss Merlot Wine</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>2 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Alcoholic</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div data-category="wine" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927225431_[fpdl.in]_side-view-jug-with-red-wine-grape-dark-horizontal_176474-4227_normal (1).jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Radiant Rosé Radiance Wine</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>2 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Alcoholic</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div data-category="tequila" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927225818_[fpdl.in]_side-view-tequila-glass-served-with-limes-salt_176474-905_normal (1).jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Whispering Pine Tequila</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>5 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Alcoholic</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>6/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div  data-category="cake" class="Product-item">
+                <div class="Product-item-img"><img src="./Images/image 26-1.png" alt=""></div>
+
+                <h4 class="product4">Strawberry Oatmeal Pancake with Honey Syrup</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>30 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Breakfast</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>5/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div  data-category="barbecue" class="Product-item">
+                <div class="Product-item-img"><img src="./Images/image 26-2.png" alt=""></div>
+
+                <h4 class="product4">Chicken Meatballs with Cream Cheese</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>30 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Meat</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>7/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="cake" class="Product-item">
+                <div class="Product-item-img"><img src="./Images/image 26-3.png" alt=""></div>
+
+                <h4 class="product4">Fruity Pancake with Orange & Blueberry</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>30 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Sweet</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>2/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="Product-item">
+                <div class="Product-item-img"><img src="./Images/image 26-4.png" alt=""></div>
+
+                <h4 class="product4">The Creamiest Creamy Chicken and Bacon Pasta</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>30 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Noodles</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>3/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="Product-item">
+                <div class="Product-item-img"><img src="./Images/image 26-5.png" alt=""></div>
+                <h4 class="product4">Fresh and Healthy Mixed Mayonnaise Salad</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>30 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Healthy</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="pizza" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai.jpg" alt="">
+                </div>
+
+                <h4 class="product4">Fresh Italian Pizza</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>25 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>FastFood</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="pizza" class="Product-item">
+                <div class="Product-item-img"><img src="./Images/mixed-pizza-with-various-ingridients.jpg" alt=""></div>
+
+                <h4 class="product4">Mixed Pizza with various ingridients</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>45 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>FastFood</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="ceaser" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927231635_[fpdl.in]_top-view-caesar-salad-oval-plate-fork-anise-seeds-dark-red-background_140725-124361_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Royal Caesar Rendezvous</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Salad</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="ceaser" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927231608_[fpdl.in]_side-view-caesar-salad-with-chicken-parmesan-cheese-white-bowl-wooden-board_140725-11875_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Palatial Caesar Palate</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Salad</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="hamburger" class="Product-item">
+                <div class="Product-item-img"><img src="./Images/front-view-burger-stand.jpg" alt=""></div>
+
+                <h4 class="product4">Gourmet Flavor Explosion Burger</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>45 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>FastFood</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="taco" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927004335_[fpdl.in]_traditional-mexican-tacos-with-meat-vegetables-yellow-background_123827-20218_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Tantalizing Tacos: A Culinary Journey through Spices and Flavors</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>FastFood</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="taco" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927004612_[fpdl.in]_taco-plate-with-beef-grilled-veggies-guacamole-generative-ai_188544-12113_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Gourmet Taco Tango: Embarking on a Flavorful Fiesta</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>FastFood</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="hotdog" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927004923_[fpdl.in]_delicious-hot-dogs-with-mustard-onion_23-2148768194_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Ultimate Hot Dog Symphony: A Culinary Journey</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>20 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>FastFood</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+            </div>
+            <div data-category="tuna" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927232018_[fpdl.in]_tuna-salad-with-cherry-tomatoes-olives-white-plate_141793-2923_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Imperial Tuna Delight</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Salad</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="waldorf" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927232431_[fpdl.in]_autumn-salad-with-apples-walnuts-wooden-table_123827-26394_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Gourmet Roman Emperor Waldorf</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Salad</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="hotdog" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927005246_[fpdl.in]_delicious-hot-dogs-arrangement_23-2149235978_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Hot Dog Odyssey: A Journey through Gourmet Tastes</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>20 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>FastFood</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="nuggets" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927005621_[fpdl.in]_side-view-snacks-onion-rings-mozzarella-sticks-french-fries-sauces-board_141793-5101_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Crispy Nugget Symphony: An Epicurean Journey</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>FastFood</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="nuggets" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927005846_[fpdl.in]_close-up-view-tasty-chicken-nuggets-black-plate-tomatoes-fork-dark-surface-with-free-space_179666-42443_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Epicurean Escapade with Nuggets: Unveiling Gourmet Joy</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>FastFood</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="cake" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927010155_[fpdl.in]_chocolate-cake-decorated-with-forest-fruits-blueberries-strawberries-blackberries-ai-generative_123827-24046_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Royal Velvet: Gourmet Cake Magic</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>45 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Cake</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="cobb" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927232300_[fpdl.in]_fresh-vegetables-colorful-sliced-such-as-cucumbers-red-tomatoes-onion-wooden-rustic-surface_140725-14178_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Legend Cobb Crown</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Salad</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="dolma" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927234711_[fpdl.in]_dolma-stuffed-grape-leaves-traditional-caucasian-turkish-greek-cuisine-blue-plate-cutting-board-with-fresh-herbs-tomato-light-background_185452-2866_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Dolma Stuffed Grape Leaves</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>40 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Meat</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="fish" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927235356_[fpdl.in]_bottom-view-fish-fry-fried-eggplants-onion-peppers-wood-board-spices-small-bowls-fork-knife-tomatoes-oil-bottle-mint-dill-dark-background_140725-112096_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Fish Fry Fried Eggplants Peppers On Wood</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>30 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Meat</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="lahmacun" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230928000356_[fpdl.in]_lahmacun-with-lemons-greens_140725-134_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4"> Lahmacun With Lemons And Greens </h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Meat</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="fish" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927235515_[fpdl.in]_two-baked-seabass-baking-dish-with-spices-black-table-top-view_2829-20042_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Fish Baking Dish With Spices</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>50 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Meat</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="dolma" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927234845_[fpdl.in]_front-view-delicious-bell-peppers-cooked-dish-with-meat-dark-background-dinner-dish-meat-bake-food-salt_140725-115601_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Dolma Bell-Peppers Cooked </h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>40 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Meat</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="cake" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927010421_[fpdl.in]_sponge-cake-with-strawberries-top_144627-45517_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Sweet Serenade: A Cake Medley</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>45 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Cake</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="cheesecake" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927010658_[fpdl.in]_sweet-slice-berry-cheesecake-white-plate-generated-by-ai_188544-9919_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Slices of Joy: A Gourmet Cake Tale</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Cake</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="cheesecake" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927010935_[fpdl.in]_homemade-cheesecake-with-raspberries-blueberries_1339-93988_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Creamy Bliss: The Cheesecake Chronicle</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Cake</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="brownie" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927011110_[fpdl.in]_chocolate-brownie-cake-dessert-slices-with-raspberries-spices-top-view_114579-9663_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Baking Bliss: A Brownie Tale</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Cake</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="tuna" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927232032_[fpdl.in]_salad-from-canned-tuna-with-tomatoes-cucumber-orzo_252124-939_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Majestic Tuna Crown</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Salad</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="brownie" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927011334_[fpdl.in]_chocolate-brownies-filled-with-melted-sweet-chocolate-black-background-blur_358001-9106_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Sensational Squares: A Brownie Affair</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Cake</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="tiramisu" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927011559_[fpdl.in]_layered-chocolate-tiramisu-cake-with-mascarpone-cream-generated-by-ai_188544-18033_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Creamy Layers: Tiramisu Delight</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>25 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Cake</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="tiramisu" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927011716_[fpdl.in]_portion-gourmet-tiramisu-italian-dessert-served-plate-gray-table-side-view-ai-generative_123827-24970_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">A Taste of Italy: Tiramisu Revels</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>25 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Cake</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="barbecue" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927235757_[fpdl.in]_kebab-platter-with-lamb-chicken-lula-tikka-kebabs-grilled-vegetables-with-red-onion-salad_141793-2251_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Kebab Platter With Lamb And Chicken </h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>40 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Meat</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="barbecue" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927235852_[fpdl.in]_grilled-chicken-legs-flaming-grill-with-grilled-vegetables-with-tomatoes-potatoes-pepper-seeds-salt_1150-37782_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Grilled Chicken Legs On The Flaming Gril </h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>25 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Meat</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="cookie" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927011953_[fpdl.in]_confectionery-illustration-cookies-with-chocolate-drops-purple-background-generative-ai_128711-5583_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Cookie Extravaganza: A Flavorful Delight</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Cake</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="cookie" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927012133_[fpdl.in]_delicious-cookies-arrangement_23-2150684180_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Chewy Temptations: Gourmet Cookie Revels</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>25 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Cake</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="chips" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927012431_[fpdl.in]_crunchy-homemade-french-fries-deep-fried-perfection-generated-by-ai_188544-37670_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Golden Bites: Gourmet Chips Adventure</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>25 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Snacks</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="quinoa" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927232636_[fpdl.in]_salads-with-quinoa-arugula-radish-tomatoes-cucumber-bowl-wooden-table-healthy-food-diet-detox-vegetarian-concept_2829-6842_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Sovereign Quinoa Sensation</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>15 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Salad</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="chips" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927012508_[fpdl.in]_ai-generated-pasta_23-2150637291_normal.jpg" alt="">
+                </div>
+
+                <h4 class="product4">Chip Extravaganza: A Flavorful Snack Tale</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>25 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Snacks</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="popcorn" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927012718_[fpdl.in]_view-3d-cinema-popcorn_23-2150720788_normal.jpg" alt="">
+                </div>
+
+                <h4 class="product4">Savory Bites: Gourmet Popcorn Medley</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>10 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Snacks</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="popcorn" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927012734_[fpdl.in]_fresh-gourmet-snack-yellow-bowl-indoors-generated-by-ai_188544-44477_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Popcorn Paradise: A Flavorful Fiesta</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>10 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Snacks</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="steak" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230928000042_[fpdl.in]_chef-cooking-tasty-pork-steak_127425-436_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Chef Cooking Tasty Pork Steak </h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>35 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Meat</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="steak" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230928000226_[fpdl.in]_juicy-steak-medium-rare-beef-with-spices-grilled-vegetables_2829-18672_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4"> Steak Medium Rare Beef </h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>45 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Meat</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="nuts" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927013129_[fpdl.in]_nutty-snack-bowl-almonds-cashews-walnuts-pecans-generated-by-ai_24640-80574_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Nutty Serenade: A Medley of Crunch</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>5 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Snack</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="nuts" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927013158_[fpdl.in]_advertising-nuts-flying-nuts_85333-866_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">A Nutty Retreat: Flavorful Escapades</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>5 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Snacks</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="fruitbowl" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927013450_[fpdl.in]_bowl-fruit-salad-with-mint-leaves-table_1340-35021_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Sun-Kissed Fruit Selection</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>5 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Snacks</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="fruitbowl" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927013515_[fpdl.in]_bowl-fruit-salad-with-purple-background_1340-35058_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Bountiful Fruit Ensemble</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>5 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Snacks</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="veggiesticks" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927013903_[fpdl.in]_tray-skewers-with-variety-food-it_1340-26751_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Garden Fresh Veggie Sticks</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>10 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Snacks</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="veggiesticks" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927013925_[fpdl.in]_high-angle-delicious-banana-dessert_23-2150764306_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Savory Veggie Dip Sticks</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>10 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Snacks</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="icedcoffe" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927014446_[fpdl.in]_hot-drink-coffee-shop-still-life-rustic-generated-by-ai_188544-29204_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Iced Cappuccino Chill</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>5 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Wine</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="icedcoffe" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927014716_[fpdl.in]_coffee-ai-generated_23-2150691757_normal.jpg" alt="">
+                </div>
+
+                <h4 class="product4">Icy Espresso Elixir</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>5 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Wine</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="smoothies" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927014926_[fpdl.in]_refreshing-fruit-smoothies-fresh-flavorful-generative-ai_971989-3539_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Silky Smoothie Sensation</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>10 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Wine</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="smoothies" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927014942_[fpdl.in]_fresh-organic-blueberry-smoothie-rustic-wooden-bowl-generated-by-ai_188544-54206_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Vitamin Boost Smoothie</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>10 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Wine</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="freshjuices" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927015649_[fpdl.in]_colorful-drink-with-oranges-mint-bottom_1340-34877_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Pure and Natural Juice Elixirs</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>5 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Wine</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="freshjuices" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927015719_[fpdl.in]_glass-orange-juice-with-orange-wooden-table_865967-502692_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Vibrant and Zesty Juice Infusions</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>5 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Wine</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="flavoredwater" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927020030_[fpdl.in]_summer-refreshing-beverages_118124-38444_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Zesty Flavored H2O</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>5 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Wine</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="flavoredwater" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927020055_[fpdl.in]_fresh-mojito-round-glass-with-water-splash-isolated-dark-background-generative-ai_500695-241_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Infused Aqua Delights</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>5 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Wine</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="milkshakes" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927020323_[fpdl.in]_chocolate-strawberry-milkshake-wooden-table-background_145644-995_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Luscious Froth Shake</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>10 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Wine</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="milkshakes" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927020338_[fpdl.in]_hot-chocolate-with-marshmallows-candy-cane-generated-by-ai_188544-22766_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Velvet Smooth Milk Fusion</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>10 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Wine</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="beer" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927020839_[fpdl.in]_refreshing-beer-drops-splash-drinking-glass-generated-by-ai_24640-86548_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Brewer's Gold</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>20 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Alcoholic</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="beer" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927020852_[fpdl.in]_frothy-beer-gold-glass-rustic-table-generated-by-ai_24640-86584_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Bubbly Brewskie</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>20 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Alcoholic</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>8/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="whisky" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927230253_[fpdl.in]_ice-cubes-fall-into-glass-with-brown-alcoholic-drink_152625-2705_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Copper Cascade Whisky</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>5 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Alcoholic</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>6/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div data-category="whisky" class="Product-item">
+                <div class="Product-item-img"><img
+                        src="./Images/20230927230328_[fpdl.in]_whiskey-with-ice-modern-glasses_152625-2_normal.jpg"
+                        alt=""></div>
+
+                <h4 class="product4">Smoky Mountain Whisky</h4>
+                <div class="product-icon">
+                    <div class="product-icon1"><i class="fa-solid fa-clock"></i>
+                        <h4>5 minute</h4>
+                    </div>
+                    <div class="product-icon2"><i class="fa-solid fa-utensils"></i>
+                        <h4>Alcoholic</h4>
+                    </div>
+                    <div class="product-icon3"> <i class="fa-solid fa-kitchen-set"></i>
+                        <h4>6/10</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="A">
+
+            <div class="B">
+                <h1>Aurora</h1>
+                <p>Our job is to filling your tummy with delicious food.</p>
+                <div class="C">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+
+            <div class="D">
+                <h2>About</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Features</li>
+                    <li>News</li>
+                    <li>Menu</li>
+                </ul>
+            </div>
+            <div class="E">
+                <h2>Company</h2>
+                <ul>
+                    <li>Why Aurora?</li>
+                    <li>PArtner With US</li>
+                    <li>FAQ</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="F">
+                <h2>Support</h2>
+                <ul>
+                    <li>Account</li>
+                    <li>Support Center</li>
+                    <li>Feedback</li>
+                    <li>Contact Us</li>
+                    <li>Accesebility</li>
+                </ul>
+            </div>
+
+
+            <div class="H">
+                <h2>Get in Touch</h2>
+
+                <ul>
+                    <li>Question of feedback?</li>
+                    <li>We'd love to hear from you</li>
+                </ul>
+                <div class="G">
+                    <h2>Email Adress</h2><i class="fa-regular fa-paper-plane"></i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <script src="products.js"></script>
+</body>
+
+</html>

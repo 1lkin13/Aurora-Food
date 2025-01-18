@@ -1,0 +1,592 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html{
+  zoom:90%
+}
+a{
+  text-decoration-line: none;
+}
+::-webkit-scrollbar {
+width: 5px;
+/* display: none; */
+}
+html{
+scroll-behavior: smooth;
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background-color: #9e9e9e;
+/* display: none; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background-color: #53b2ea;
+}
+nav{
+  width: 100%;
+  height: 80px;
+  background-color:rgb(255, 255, 255) ;
+  display: flex;
+  position: absolute;
+position: fixed;
+z-index: 1000;
+}
+nav.scrolled{
+background: linear-gradient(120deg, rgba(22, 31, 35, 0.992) 30%, rgba(0, 0, 0, 0.992) 70%)!important;
+color: white!important;
+
+
+
+}
+/* #signin{
+color:#000000
+}
+nav.scrolled #signin{
+color: white;
+} */
+#searcha{
+color: black;
+}
+nav.scrolled #searcha{
+color: white!important;
+}
+nav.scrolled ul li {
+color: #ffffff; /* Kaydırıldığında renk */
+}
+nav.scrolled ul li::after {
+background: #ffffff; /* Kaydırıldığında renk */
+}
+nav.scrolled h1{
+color: #FFFFFF;
+}
+
+nav.scrolled .nav-flex2  {
+color: #ffffff;
+} 
+.nav-flex1{
+  width:40%;
+  height: 80px;
+
+
+
+}
+.nav-flex3{
+  display: flex;
+  width:40%;
+  height: 80px;
+  
+
+}
+.nav-flex2{
+  width:20%;
+  height: 80px;
+  /* background-color: bisque; */
+
+}
+.nav-flex1 ul{
+  display: flex;
+
+  list-style-type: none;
+  padding-left:270px;
+
+
+}
+.nav-flex1 ul li {
+  margin-top: 30px;
+  margin-left:50px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  cursor:pointer;
+  color: #000000;
+  
+}
+.nav-flex1 ul li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #000000;
+  transition: width .5s;
+}
+
+.nav-flex1 ul li:hover::after {
+  width: 100%;
+  
+}
+.nav-flex3 ul{
+  width: 38%;
+  display: flex;
+  list-style-type: none;
+ 
+
+  
+
+}
+.nav-flex3 ul li {
+position:relative;
+right: 50px;
+ margin-left: 50px;
+ margin-top:30px;
+ font-family: 'Inter', sans-serif;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 19px;
+ cursor:pointer;
+ color: #000000;
+
+}
+.nav-flex3 ul li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #000000;
+  transition: width .5s;
+}
+
+.nav-flex3 ul li:hover::after {
+  width: 100%;
+  
+}
+.nav-flex3 button{
+  box-sizing: border-box;
+width: 143px;
+height: 32px;
+cursor: pointer;
+font-family: 'Inter', sans-serif;
+
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #000000;
+border: 1px solid rgba(15, 15, 15, 0.071);
+border-radius: 15px;
+}
+.nav-flex3 button:hover{
+  border: 1px solid rgb(18, 18, 18);
+  transition:0.7s;
+
+}
+.nav-flex3A{
+width:40%;
+padding-top: 25px;
+height: 80px;
+flex-wrap: wrap;
+display: flex!important;
+justify-content: space-between;
+cursor: pointer;
+
+}
+.nav-flex3A i {
+  font-size:19px;
+  padding-top:5px;
+}
+
+.nav-flex2 h1{
+  position: absolute;
+  width: 170px;
+  height: 65px;
+  left:635px;
+  /* bottom:0px; */
+  /* top:2px; */
+  font-family: 'Great Vibes', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size:70px;
+  /* line-height:0px; */
+  letter-spacing: -0.02em;
+  
+  color: #000000;
+  
+}
+
+.First{
+    width: 100%;
+    height:100vh;
+    /* background-color: #53b2ea; */
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.Flex1{
+    width: 100%;
+    height:200px;
+    /* background-color: #000000; */
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:120px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.Flex2{
+    width: 100%;
+    /* background-color: #8444a1; */
+    height: 700px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.Text{
+    /* background-color: aquamarine; */
+    width: 49.9%;
+    height: 70px;
+    background-color:#E7FAFE; /* Arkaplan rengi */
+border: 2px solid #cce3e8;
+
+    border-radius: 20px;
+
+   
+}
+.Text h1{
+ 
+    text-align: center;
+
+    font-size:33px;
+    font-weight: 600;
+font-family: 'Inter', sans-serif;
+   
+}
+.Widgets{
+    /* background-color: rgb(255, 172, 127); */
+    width:49.9%;
+    height: 70px;
+    /* margin-top: 30px; */
+    border-radius: 20px;
+border: 2px solid #cce3e8;
+ 
+}
+.product-icon{
+    /* background-color: #a50404; */
+  /* margin-top:10px; */
+    width:100%;
+    
+ 
+    display: flex;
+  }
+  .product-icon1{
+    width:23%;
+    display: flex;
+    margin-top:15px;
+    /* background-color: blueviolet; */
+    justify-content:center;
+  }
+  .product-icon2{
+  width:23%;
+  margin-top:15px;
+
+  justify-content:center;
+  display: flex;
+    /* background-color: aqua; */
+  }
+
+  .product-icon3{
+    /* background-color: antiquewhite; */
+    width:23%;
+    margin-top:15px;
+
+    display: flex;
+    justify-content:center;
+  }
+  .product-icon1 h4{
+  padding-top:5px;
+  font-size:16px;
+  margin-left:5px;
+  font-family: 'Inter', sans-serif;
+  
+  }
+  .product-icon2 h4{
+  padding-top:5px;
+  font-family: 'Inter', sans-serif;
+  
+  font-size:16px;
+  margin-left:5px;
+  }
+  .product-icon3 h4{
+    padding-top:5px;
+    font-family: 'Inter', sans-serif;
+    
+    font-size:16px;
+    margin-left:5px;
+    }
+    .like {
+    
+        width: 50px; /* İkonun genişliği ve yüksekliği */
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#E7FAFE; /* Arkaplan rengi */
+        border-radius: 50%; /* Yuvarlak kenarlar için */
+        margin-bottom: 20px!important;
+        margin-top: 5px!important;
+        border:2px solid #d0dee0;
+        cursor: pointer;
+      }
+      .like:hover{
+        border:2px solid #c5edf2;
+box-shadow: rgba(105, 105, 105, 0.508) 0px 4px 6px;
+
+      }
+      
+      .like i {
+        font-size:24px!important; /* Kalp simgesinin boyutu */
+        color: rgb(0, 0, 0); /* Kalp simgesinin rengi */
+        padding-left: 0px!important;
+        
+      }
+      .like i:hover{
+        color: red;
+      }
+  .product-icon i{
+  font-size:26px;
+  color:000000;
+ padding-left: 14px;
+  }
+.Image{
+    background-image:url(/Images/image\ 34.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: rgb(178, 255, 127); */
+    width:48%;
+    height: 480px;
+    border-radius:20px;
+    margin-top: 10px;
+}
+.Information{
+    width:250px;
+    height: 250px;
+    background-color:#E7FAFE; /* Arkaplan rengi */
+   
+    /* margin-right:350px; */
+    border-radius:20px;
+    margin-top:70px;
+    padding:20px;
+
+}
+.Information h2 {
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    font-style: bold;
+    font-weight: 800;
+    font-size: 24px;
+    /* line-height: 19px; */
+  }
+  hr{
+    height:1.1px;
+   background-color: #000000;
+  }
+  .Information p {
+    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+
+  }
+  
+  .Information p strong {
+    margin-right: 10px;
+  }
+.Directions{
+    width:300px;
+    height: 350px;
+    background-color:#E7FAFE; /* Arkaplan rengi */
+
+    /* margin-right:350px; */
+    overflow: auto; /* Scroll için gereken içerik fazla ise scrollbar görüntüle */
+    max-height: 350px;
+    margin-top:70px;
+padding: 20px;
+    border-radius:20px;
+
+}
+.Directions h3 {
+    color: #333;
+ font-size: 26px;
+    font-family: 'Inter', sans-serif;
+    font-style: bold;
+    font-weight: 800;
+  }
+  
+  .Directions p {
+    margin-bottom: 10px;
+  }
+footer{
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+background: linear-gradient(120deg, rgba(22, 31, 35, 0.992) 30%, rgba(0, 0, 0, 0.992) 70%)!important;
+
+    /* height: 50vh; */
+  }
+  .A{
+    width:90%;
+    /* height:50vh; */
+    margin: auto;
+    padding-top: 30px;
+    /* background-color: #008296; */
+    display: flex;
+  }
+  .B{
+    width: 20%;
+    /* background-color: #0fd3a2; */
+    height: 50vh;
+  }
+  .B h1{
+    font-size:70px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    
+  }
+  .B p{
+    font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  }
+  .C{
+    width: 100%;
+    /* background-color: #81370f; */
+    /* height: 50px; */
+    margin-top:50px;
+    text-align: center;
+  }
+  .C i{
+    /* padding-top:5px; */
+    font-size:28px;
+    margin:15px;
+    color:#ffffff;
+  }
+  .D{
+    width: 20%;
+    /* background-color: #81d30f; */
+    /* height: 50vh; */
+    text-align: center;
+    color: #ffffff;
+  
+  }
+  .D h2{
+    font-size:26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  .D ul{
+   list-style-type: none;
+  
+  }
+  .D ul li{
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-top:10px;
+  }
+  
+  .E{
+    width: 20%;
+    /* background-color: #0f33d3; */
+    /* height: 50vh; */
+    text-align: center;
+    color: #ffffff;
+  
+  }
+  .E h2{
+    font-size:26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  .E ul{
+   list-style-type: none;
+  
+  }
+  .E ul li{
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-top:10px;
+  }
+  .F{
+    width: 20%;
+    /* background-color: #a50fd3; */
+    /* height: 50vh; */
+    text-align: center;
+    color: #ffffff;
+  }
+  .F h2{
+    font-size:26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  .F ul{
+   list-style-type: none;
+  
+  }
+  .F ul li{
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-top:10px;
+  }
+  .H{
+    width: 20%;
+    /* background-color: #0fd3d3; */
+    /* height: 50vh; */
+    text-align: center;
+    color: #ffffff;
+  }
+  .H h2{
+    font-size:26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  .H ul{
+   list-style-type: none;
+  
+  }
+  .H ul li{
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-top:10px;
+  }
+  .G{
+   
+    background-color: #ffffff;
+    margin:40px auto;
+    border-radius: 10px;
+    /* Auto layout */
+    width: 196px;
+    /* height: 51px; */
+  display: flex;
+  border: 1px solid #BDBDBD;
+  border-radius: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  gap: 63px;
+  cursor: pointer;
+  }
+  .G h2{
+    font-size:14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #000000;
+  }
